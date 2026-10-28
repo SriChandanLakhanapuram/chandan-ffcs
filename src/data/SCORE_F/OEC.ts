@@ -1,61 +1,44 @@
 export const OEC = {
-  "BABIT101 - Biochemistry": [
-    { slot: "L11+L12", venue: "SMV212", faculty: "KALAIVANI T" },
-    { slot: "L47+L48", venue: "SMV212", faculty: "KALAIVANI T" },
-    { slot: "L47+L48", venue: "SMV212", faculty: "KAMALANATHAN A.S" },
-    { slot: "L11+L12", venue: "SMV212", faculty: "JAYASRI M.A" },
-    { slot: "E1+TE1", venue: "PRP772", faculty: "KALAIVANI T" },
-    { slot: "E2+TE2", venue: "PRP230", faculty: "KALAIVANI T" },
+  'BACSE301 - Exploratory Data Analysis': [
+    { slot: 'B1+TB1', venue: 'PRP411', faculty: 'SUBRAMANIYASWAMY V' },
+    { slot: 'B2+TB2', venue: 'PRP411', faculty: 'SWETHA V' },
+    { slot: 'L31+L32', venue: 'PRP655', faculty: 'SUBRAMANIYASWAMY V' },
+    { slot: 'L27+L28', venue: 'PRP655', faculty: 'SWETHA V' },
   ],
-  "BABIT202 - Fundamentals of Bioinformatics": [
-    { slot: "D2+TD2", venue: "SMV109", faculty: "RAHUL SHAW" },
-    { slot: "L7+L8", venue: "SMVG15", faculty: "RAHUL SHAW" },
-    { slot: "D1+TD1", venue: "SMV109", faculty: "SAJITHA LULU S" },
-    { slot: "D1+TD1", venue: "SMV121", faculty: "RAJINIRAJA M" },
-    { slot: "L33+L34", venue: "SMVG15", faculty: "SAJITHA LULU S" },
-    { slot: "L51+L52", venue: "SMVG15", faculty: "RAJINIRAJA M" },
+
+  'BACSE302 - Machine Learning and Optimization': [
+    { slot: 'L35+L36', venue: 'SJT418', faculty: 'ANITHA E' },
+    { slot: 'B1+TB1', venue: 'PRP330', faculty: 'ANITHA E' },
   ],
-  "BACLE303 - Digital Management and Practices in Construction": [
-    { slot: "D1+TD1", venue: "CDMM404", faculty: "CHELLAPANDIAN M" },
-    { slot: "L37+L38", venue: "GDN153", faculty: "CHELLAPANDIAN M" },
+
+  'BACSE305 - Foundations of Data Science': [
+    { slot: 'B2+TB2', venue: 'PRP332', faculty: 'LAKSHMI S' },
+    { slot: 'L21+L22', venue: 'PRP354', faculty: 'LAKSHMI S' },
   ],
-  "BACSE324 - Embedded Systems Architecture": [
-    { slot: "E1+TE1", venue: "PRP471", faculty: "MUTHU RAJA S" },
-    { slot: "E2+TE2", venue: "PRP471", faculty: "BOOPALAN G" },
-    { slot: "L21+L22", venue: "SJT515", faculty: "BOOPALAN G" },
-    { slot: "L51+L52", venue: "SJT515", faculty: "MUTHU RAJA S" },
+
+  'BACSE324 - Embedded Systems Architecture': [
+    { slot: 'B1+TB1', venue: 'PRP224', faculty: 'ROHIT MATHUR' },
+    { slot: 'B2+TB2', venue: 'PRP224', faculty: 'ROHIT MATHUR' },
+    { slot: 'L25+L26', venue: 'SJT621', faculty: 'ROHIT MATHUR' },
+    { slot: 'L47+L48', venue: 'SJT621', faculty: 'ROHIT MATHUR' },
   ],
-  "BAEEE324 - Engineering Optimization": [
-    { slot: "F2+TF2", venue: "TT201", faculty: "RAGHUNATHAN T" },
+
+  'BACSE344 - Cloud Infrastructure and Architecture': [
+    { slot: 'C1+TC1+TCC1', venue: 'PRP414', faculty: 'JAYACHANDRAN J' },
   ],
-  "BAEIE307 - Artificial Intelligence": [
-    { slot: "C1+TC1+TCC1", venue: "TT204", faculty: "MUKUL CHANKAYA" },
+
+  'BAITE311 - Introduction to Finance': [
+    { slot: 'A1+TA1+TAA1', venue: 'SJT201', faculty: 'PALANIAPPAN S' },
+    { slot: 'A2+TA2+TAA2', venue: 'PRP125', faculty: 'PALANIAPPAN S' },
   ],
-  "BAHIN101 - Prathamik Hindi": [
-    { slot: "F1+TF1", venue: "SJT803", faculty: "JAYALAKSHMI K" },
+
+  'BAMAT208 - Operations Research': [
+    { slot: 'B1+TB1', venue: 'SJT604', faculty: 'MUBASHIR UNNISSA M' },
+    { slot: 'L45+L46', venue: 'PRP119', faculty: 'MUBASHIR UNNISSA M' },
   ],
-  "BAHIN102 - Prayojanmulak Hindi": [
-    { slot: "L43+L44", venue: "TT306", faculty: "JAYALAKSHMI K" },
-    { slot: "E2", venue: "SMV109", faculty: "JAYALAKSHMI K" },
-  ],
-  "BAHUM226 - Indian Classical Music": [
-    { slot: "G1+TG1", venue: "SJTA301", faculty: "SUDHEER C V" },
-  ],
-  "BAMAT208 - Operations Research": [
-    { slot: "L59+L60", venue: "PRP119", faculty: "UMAKANTA MISHRA" },
-    { slot: "L11+L12", venue: "PRP119", faculty: "MANIVANNAN R" },
-    { slot: "E1+TE1", venue: "PRP576", faculty: "UMAKANTA MISHRA" },
-    { slot: "E2+TE2", venue: "PRP576", faculty: "MANIVANNAN R" },
-  ],
-  "BAMEE208 - Additive Manufacturing: Processes and Design": [
-    { slot: "A2+TA2", venue: "MB229", faculty: "GURURAJA S" },
-    { slot: "L11+L12", venue: "GDNG02", faculty: "GURURAJA S" },
-    { slot: "L29+L30", venue: "GDNG02", faculty: "GURURAJA S" },
-  ],
-  "BAMEE310 - Fundamentals of Mechatronics Systems": [
-    { slot: "L3+L4", venue: "ALM 501B", faculty: "BIBEKANANDA PATRA" },
-    { slot: "L11+L12", venue: "ALM 501B", faculty: "BIBEKANANDA PATRA" },
-    { slot: "L39+L40", venue: "ALM 501B", faculty: "BIBEKANANDA PATRA" },
-    { slot: "L55+L56", venue: "ALM 501B", faculty: "BIBEKANANDA PATRA" },
+
+  'BACSE320 - Penetration Testing and Vulnerability Assessment': [
+    { slot: 'B2+TB2', venue: 'PRP308', faculty: 'ROHITH R' },
+    { slot: 'L21+L22', venue: 'PRP350', faculty: 'ROHITH R' },
   ],
 };

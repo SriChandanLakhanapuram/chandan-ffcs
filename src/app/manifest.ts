@@ -187,19 +187,6 @@ export default function manifest(): MetadataRoute.Manifest {
         ],
       },
       {
-        name: 'Saved Timetables',
-        short_name: 'Saved Timetables',
-        description: 'View your saved timetables',
-        url: '/saved',
-        icons: [
-          {
-            src: '/logo_ffcs/icon-192x192.webp',
-            sizes: '192x192',
-            type: 'image/webp',
-          },
-        ],
-      },
-      {
         name: 'Slots',
         short_name: 'Slots',
         description: 'View available slots',

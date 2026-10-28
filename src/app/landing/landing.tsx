@@ -56,6 +56,7 @@ export default function View() {
 
         const updatedCourse = {
           ...existingCourse,
+          ...newCourse,
           courseSlots: mergedSlots,
         };
 

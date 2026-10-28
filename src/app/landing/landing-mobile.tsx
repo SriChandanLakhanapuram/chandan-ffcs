@@ -1,30 +1,13 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Footer from '@/components/ui/Footer';
 import Accordion from '@/components/ui/Accordion';
 
-import { ZButton } from '@/components/ui/Buttons';
-import { useRouter } from 'next/navigation';
-import { signIn, useSession } from 'next-auth/react';
-import { PopupLogin } from '@/components/ui/PopupMobile';
-
 export default function View() {
-  const router = useRouter();
-  const { data: session } = useSession();
-  const loggedin = !!session;
-  const [showLoginPopupSaved, setShowLoginPopupSaved] = useState(false);
-
   return (
     <>
-      {showLoginPopupSaved && (
-        <PopupLogin
-          closeLink={() => setShowLoginPopupSaved(false)}
-          onLoginClick={() => signIn('google', { callbackUrl: '/saved', redirect: true })}
-        />
-      )}
-
       <div className="flex flex-col min-h-screen relative select-none">
         <div className="absolute inset-0 -z-10 bg-[#CEE4E5]">
           <Image
@@ -65,12 +48,6 @@ export default function View() {
           <div className="text-xl mb-8 font-poppins text-black">
             Use PC or Tablet For All Features
           </div>
-          <ZButton
-            type="regular"
-            text="Saved Timetables"
-            color="green"
-            onClick={loggedin ? () => router.push('/saved') : () => setShowLoginPopupSaved(true)}
-          />
         </div>
 
         <div className="h-6" />

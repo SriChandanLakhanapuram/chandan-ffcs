@@ -8,10 +8,18 @@ type ComboBoxProps = {
   options: string[];
   onChange: (val: string) => void;
   renderOption?: (val: string) => string;
+  openOnMount?: boolean;
 };
 
-export default function ComboBox({ label, value, options, onChange, renderOption }: ComboBoxProps) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function ComboBox({
+  label,
+  value,
+  options,
+  onChange,
+  renderOption,
+  openOnMount = false,
+}: ComboBoxProps) {
+  const [isOpen, setIsOpen] = useState(openOnMount);
   const [inputValue, setInputValue] = useState('');
   const ref = useRef<HTMLDivElement>(null);
 

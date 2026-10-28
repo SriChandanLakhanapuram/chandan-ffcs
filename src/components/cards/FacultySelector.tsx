@@ -9,26 +9,7 @@ import { fullCourseData } from '@/lib/type';
 import AlertModal from '../ui/AlertModal';
 import { course_type_map } from '@/lib/course_codes_map';
 import ComboBox from '@/components/ui/ComboBox';
-const schools = [
-  'SCOPE',
-  'SCORE',
-  'SELECT',
-  'SMEC',
-  'SBST',
-  'SCHEME',
-  'SENSE',
-  'SCE',
-  'SHINE',
-  'MTech',
-  "MTech ('25 Batch)",
-  "SCOPE ('25 Batch)",
-  "SCORE ('25 Batch)",
-  "SELECT ('25 Batch)",
-  "SMEC ('25 Batch)",
-  "SBST ('25 Batch)",
-  "SENSE ('25 Batch)",
-  "SHINE ('25 Batch)",
-];
+const schools = ["SCORE ('25 Batch)"];
 
 type SubjectEntry = {
   slot: string;
@@ -261,7 +242,7 @@ export default function FacultySelector({
     morning: [],
     evening: [],
   });
-  const [selectedSchool, setSelectedSchool] = useState('SCOPE');
+  const [selectedSchool, setSelectedSchool] = useState("SCORE ('25 Batch)");
   const [selectedFaculties, setSelectedFaculties] = useState<string[]>([]);
   const [priorityList, setPriorityList] = useState<string[]>([]);
   const [selectedDomain, setSelectedDomain] = useState('');
@@ -519,7 +500,7 @@ export default function FacultySelector({
         }
       }
     }
-  }, [selectedSchool, selectedDomain, selectedSubject, selectedSlot, selectedLabShift]);
+  }, [data, selectedSchool, selectedDomain, selectedSubject, selectedSlot, selectedLabShift]);
 
   useEffect(() => {
     if (!selectedSubject || !selectedLabShift) return;
@@ -633,7 +614,7 @@ export default function FacultySelector({
                     selectedSchool === school ? 'bg-[#FFEA79]' : 'bg-white'
                   }`}
                 >
-                  {school == 'MID_5YEAR' ? 'SCOPE (MID)' : school}
+                  {school}
                 </button>
               ))}
             </div>
@@ -653,6 +634,7 @@ export default function FacultySelector({
               value={selectedSubject}
               options={subjects}
               onChange={handleSubjectChange}
+              openOnMount={Boolean(selectedDomain && !selectedSubject)}
             />
             {getCourseType(selectedSubject.split(' - ')[0]) === 'P' &&
             !selectedSubject.split(' - ')[0].startsWith('BSTS') ? (
